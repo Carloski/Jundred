@@ -1,3 +1,11 @@
+/* =====FONT IMPORT===== */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital@1&family=Roboto:wght@300;400;700&display=swap");
+/* 
+====Fonts==== 
+font-family: 'Bungee Shade', cursive;
+font-family: 'Roboto', sans-serif; 
+*/
+
 :root {
   --primary-color: #1d5888;
   --secondary-color: #ff993b;
@@ -7,6 +15,7 @@
 
 body {
   color: var(--dark-color);
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -59,6 +68,11 @@ footer {
 .fab:hover {
   opacity: 0.9;
   color: var(--secondary-color);
+}
+
+.logoText {
+  font-style: italic;
+  font-family: "Be Vietnam", sans-serif;
 }
 
 .bsicon {

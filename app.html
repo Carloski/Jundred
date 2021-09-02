@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project by Carlos M. Tamayo</title>
+    <title>JUNDRED: A Coding Project by Carlos M. Tamayo</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,8 +51,44 @@
 
  <!-- ====== MAIN SECTION ====== -->
 <main class="flex-shrink-0">
-<div class="container">
+<div class="container mt-5">
+    <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col-lg-4 col border-2 border-end">
+            <h1><span class="logoText">JUNDRED</span>: A coding project</h1>
+            <h4 class="lead">
+                Live life one loop at a time. A javaScript coding exercise using loops. Write a 
+                program that displays the numbers from 0 to 100. Display the even numbers 
+                in <strong>BOLD</strong>
+            </h4>
+            <h2 class="mt-5 border-2 border-bottom">Instructions:</h2>
+            <p>Enter a starting and ending value. Press the buttom and the values will appear</p>
+        </div>
+        <div class="col-lg-8 col gx-5">
+            <div>
+                <h5>Enter Values:</h5>
+                <form action="" class="row gy-3 gx-2">
+                    <div class="col">
+                        <input type="number" id="startValue" class="form-control" placeholder="Start Value" value="0" aria-label="Start Value">
+                    </div>
+                    <div class="col">
+                        <input type="number" id="endValue" class="form-control" placeholder="End Value" value="100" aria-label="End Value">
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn btn-dark btn-lg" id="btn-submit">Display the Jundred</button>
+                    </div>
+                </form>
+                <h2 class="mt-5 border-bottom border-2">Results</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <tbody id="results">
+                            <!-- RESULTS FROM JAVASCRIPT GO HERE -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
+    </div>
 </div>
 </main><!-- ====== MAIN END ====== -->
 
