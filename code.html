@@ -22,7 +22,7 @@
     <!-- ====== NAV SECTION ====== -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <a class="navbar-brand" href="#">Jundred</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -57,17 +57,82 @@
             <div class="col-lg-8">
                 <pre class="line-numbers">
                     <code class="language-javascript">
-                        //Testing Prism
-                        function helloWorld(){
-                            alert('Hello World!');
+                        
+                        //controller function
+                        function getValues() {
+                            //Get values from page
+                            let startValue = document.getElementById('startValue').value;
+                            let endValue = document.getElementById('endValue').value;
+
+                            // change input to integer
+                            startValue = parseInt(startValue);
+                            endValue = parseInt(endValue);
+
+                            // Validate values are integers
+                            if (Number.isInteger(startValue) && Number.isInteger(endValue)) {
+                                // call generate numbers
+                                let numbers = generateNumbers(startValue, endValue);
+                                displayNumbers(numbers);
+                            } else {
+                                alert('You must enter numbers');        
+                            }
+                        }
+
+                        // generate numbers from start value to end value
+                        //logic function(s)
+                        function generateNumbers(startValue, endValue) {
+
+                            // Empty array to hold the numbers
+                            let numbers = []
+
+                            // loop through numbers from start to end
+                            for (let i = startValue; i <= endValue; i ++) {
+                                // add them to the array one by one
+                                numbers.push(i);
+                            }
+                            return numbers;
+                        }
+
+                        //display the number and mark them even
+                        //display or view functions
+                        function displayNumbers(numbers) {
+
+                            let templateRows = '';
+                            for (let i = 0; i < numbers.length; i++) {
+
+                                let className = 'even';
+                                let number = numbers[i];
+
+                                if(number % 2 == 0) {
+                                    className = 'even';
+                                } else {
+                                    className = 'odd';
+                                }
+                                templateRows += `<tr><td class="${className}" >${number}</td></tr>`;
+                            }
+                            document.getElementById('results').innerHTML = templateRows;
                         }
                     </code>
                 </pre>
             </div>
             <div class="col-lg-4">
-                <h5 class="mt-2">Hello World</h5>
-                <p>The code is structured in one function</p>
-                <p>Hello World is a function that displays a message in the Page.</p>
+                <h5 class="mt-2">Jundred</h5>
+                <p>The code is structured in three function</p>
+                <p>
+                    <strong>getValues</strong> is a function that captures the value of the users selections. 
+                    It then changes the users input from a string to an integer. It uses an if statement 
+                    to validate the the input has been converted before using it in our logic function.
+                </p>
+                <p>
+                    The <strong>generateNumbers</strong> is our logic function and it uses a for loop 
+                    to iterate through the array of numbers (From the first number to the second number 
+                    and then stores them in a new array.).
+                </p>
+                <p>
+                    <strong>displayNumbers</strong> is the function that displays a message in the Page. 
+                    It uses another for loop and if statement to identify even numbers and apply styling. It uses innerHTML
+                    to display the results to the DOM.
+                </p>
             </div>
         </div>
     </div>

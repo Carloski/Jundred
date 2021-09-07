@@ -17,11 +17,6 @@ function getValues() {
     } else {
         alert('You must enter numbers');        
     }
-
-    // Call displayNumbers
-    
-    
-    
 }
 
 // generate numbers from start value to end value
@@ -37,9 +32,7 @@ function generateNumbers(startValue, endValue) {
         numbers.push(i);
     }
     return numbers;
-
 }
-
 
 //display the number and mark them even
 //display or view functions
