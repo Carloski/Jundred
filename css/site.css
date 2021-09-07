@@ -91,6 +91,16 @@ footer {
   color: #0168ba;
 }
 
+.giticon {
+  color: var(--secondary-color);
+  font-size:
+}
+
+.gitText {
+  color: var(--dark-color);
+  font-size: 30px;
+}
+
 
 code[class*="language-"],
 pre[class*="language-"] {
