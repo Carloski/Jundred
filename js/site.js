@@ -13,12 +13,13 @@ function getValues() {
     if (Number.isInteger(startValue) && Number.isInteger(endValue)) {
         // call generate numbers
         let numbers = generateNumbers(startValue, endValue);
+        displayNumbers(numbers);
     } else {
         alert('You must enter numbers');        
     }
 
     // Call displayNumbers
-    displayNumbers(numbers);
+    
     
     
 }
@@ -44,7 +45,7 @@ function generateNumbers(startValue, endValue) {
 //display or view functions
 function displayNumbers(numbers) {
 
-    let templateRow = '';
+    let templateRows = '';
     for (let i = 0; i < numbers.length; i++) {
 
         let className = 'even';
@@ -55,7 +56,7 @@ function displayNumbers(numbers) {
         } else {
             className = 'odd';
         }
-        templateRow += `<tr><td class="${className}" >${number}</td></tr>`;
+        templateRows += `<tr><td class="${className}" >${number}</td></tr>`;
     }
-    document.getElementById('results').innerHTML = templateRow;
+    document.getElementById('results').innerHTML = templateRows;
 }
