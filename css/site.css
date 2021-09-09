@@ -98,9 +98,8 @@ footer {
 
 .gitText {
   color: var(--dark-color);
-  font-size: 30px;
+  font-size: 20px;
 }
-
 
 code[class*="language-"],
 pre[class*="language-"] {
