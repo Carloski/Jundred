@@ -109,6 +109,7 @@ pre[class*="language-"] {
 }
 
 .img {
+<<<<<<< HEAD
   width: 600px;
   height: 500px;
 }
@@ -135,4 +136,13 @@ pre[class*="language-"] {
     justify-content: center;
     margin: 0 auto;
   }
+=======
+  width: 550px;
+>>>>>>> c457ef2e8c7a384bd2eb3be9e766d3b0d14bc94e
 }
+@media screen and (max-width: 420px) {
+  .img {width: 375px}
+}
+
+
+
