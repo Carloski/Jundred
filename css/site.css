@@ -108,16 +108,9 @@ pre[class*="language-"] {
   word-wrap: break-word;
 }
 
-/* .flexbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-} */
-
 .img {
-  width: 550px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
 }
 
 @media screen and (max-width: 415px) {
@@ -134,5 +127,12 @@ pre[class*="language-"] {
 @media screen and (min-width: 801px) {
   .footer {
     padding-right: 50px !important;
+  }
+
+  .flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
