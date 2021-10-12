@@ -115,32 +115,3 @@ img {
   width: 100%;
 }
 
-
-/* @media screen and (max-width: 415px) {
-  .img {
-    width: 300px !important;
-    height: 300px !important;
-  }
-
-  .navbar {
-    padding-right: 15px;
-  }
-}
-
-@media screen and (min-width: 801px) {
-  .footer {
-    padding-right: 50px !important;
-  }
-
-  .flexbox {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 420px) {
-  .img {
-    width: 375px;
-  }
-} */
